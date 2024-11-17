@@ -1,6 +1,9 @@
 html {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* Navbar */
 
 nav {
     height: 69px;
@@ -9,7 +12,6 @@ nav {
     border-bottom: 1px solid black;
     font-size: 1rem;
     justify-content: center;
-
 }
 
 nav ul {
@@ -30,11 +32,50 @@ nav ul li a {
     opacity: 50%;
 }
 
+h1 {
+    margin-bottom: 2rem;
+}
+/* About me Section */
+
+#about-me {
+    margin: 1rem 0 2rem 0;
+}
+
+.about-me-content {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+p.about-me-content{
+    text-align: left;
+    width: 40%;
+    margin: 0 auto;
+}
+
+img.about-me-content {
+    display: inline;
+    height: 22rem;
+    width: auto;
+}
+
 footer {
+    position: relative;
+    margin: 1rem auto;
     height: 69px;
+    width: 50%;
 }
 
 footer img {
     height: 1.25rem;
     width: 1.25rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between;
 }
