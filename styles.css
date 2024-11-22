@@ -3,6 +3,48 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    color: black;
+    background-color: white;
+}
+
+svg {
+    fill: gray;
+}
+/* Dark Mode */
+
+.dark-mode {
+    background-color: #1c2052;
+    color: white;
+}
+
+.dark-mode nav {
+    color: white;
+}
+
+#darkmode svg:last-child {
+    display: none;
+}
+
+.dark-mode #darkmode svg:first-child {
+    display: none;
+}
+.dark-mode #darkmode svg:last-child {
+    display: block;
+}
+
+.dark-mode ul li a {
+    color: white;
+}
+
+.dark-mode nav {
+    border-bottom: 1px solid white;
+}
+
+.dark-mode footer svg {
+    fill:#b55bba;
+}
+
 /* Navbar */
 
 nav {
@@ -30,6 +72,16 @@ nav ul li a {
     height: 1.25rem;
     width: 1.25rem;
     opacity: 50%;
+}
+#darkmode {
+    border: none;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.dark-mode .icon {
+    fill: white;
 }
 
 h1 {
@@ -61,6 +113,30 @@ img.about-me-content {
     width: auto;
 }
 
+/* Contact Me Section*/
+.contact-button {
+    height: 69px;
+    width: 300px;
+    font-size: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #1c2052;
+}
+
+.contact-button:hover {
+    cursor: pointer;
+}
+
+.contact-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.dark-mode .contact-button {
+    background-color: #b55bba;
+}
+
+/* Footer */
 footer {
     position: relative;
     margin: 1rem auto;
@@ -68,10 +144,12 @@ footer {
     width: 50%;
 }
 
-footer img {
+footer svg {
     height: 1.25rem;
     width: 1.25rem;
 }
+
+
 
 footer ul {
     display: flex;
