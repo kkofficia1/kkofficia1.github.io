@@ -42,7 +42,7 @@ svg {
 }
 
 .dark-mode footer svg {
-    fill:#b55bba;
+    fill:#567dcd;
 }
 
 /* Navbar */
@@ -98,6 +98,7 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 80%;
+    min-width: 350px;
     margin: 0 auto;
 }
 
@@ -112,6 +113,29 @@ img.about-me-content {
     height: 22rem;
     width: auto;
 }
+
+/* Project Section */
+
+table {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+tr {
+    height: 300px;
+}
+
+td {
+    width: 250px;
+    gap: 50px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.dark-mode td {
+    border: 1px solid #567dcd;
+}
+
 
 /* Contact Me Section*/
 .contact-button {
@@ -133,13 +157,13 @@ img.about-me-content {
 }
 
 .dark-mode .contact-button {
-    background-color: #b55bba;
+    background-color: #567dcd;
 }
 
 /* Footer */
 footer {
     position: relative;
-    margin: 1rem auto;
+    margin: 3rem auto;
     height: 69px;
     width: 50%;
 }
@@ -156,4 +180,29 @@ footer ul {
     align-items: center;
     list-style: none;
     justify-content: space-between;
+}
+
+
+.contact-icon {
+    height: 50px;
+    width: auto;
+    fill: #1c2052;
+}
+
+.dark-mode .contact-icon {
+    fill: #567dcd;
+}
+
+@media only screen and (max-width:600px) {
+    footer .credits {
+        display: none;
+    }
+
+    #about-me img {
+        display: none;
+    }
+
+    p.about-me-content {
+        text-align: center;
+    }
 }
