@@ -39,6 +39,7 @@ svg {
 
 .dark-mode nav {
     border-bottom: 1px solid white;
+    background-color: #1c2052;
 }
 
 .dark-mode footer svg {
@@ -48,12 +49,16 @@ svg {
 /* Navbar */
 
 nav {
+    position: fixed;
+    top: -1px;
     height: 69px;
     width: 100%;
     display: flex;
+    background-color: white;
     border-bottom: 1px solid black;
     font-size: 1rem;
     justify-content: center;
+    z-index: 5;
 }
 
 nav ul {
@@ -84,6 +89,11 @@ nav ul li a {
     fill: white;
 }
 
+main {
+    position: relative;
+    top: 69px;
+}
+
 h1 {
     margin-bottom: 2rem;
 }
@@ -98,13 +108,13 @@ h1 {
     justify-content: center;
     align-items: center;
     width: 80%;
-    min-width: 350px;
     margin: 0 auto;
 }
 
 p.about-me-content{
     text-align: left;
     width: 40%;
+    min-width: 350px;
     margin: 0 auto;
 }
 
