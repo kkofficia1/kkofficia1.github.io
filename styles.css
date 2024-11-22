@@ -203,7 +203,7 @@ footer ul {
     fill: #567dcd;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:720px) {
     footer .credits {
         display: none;
     }
