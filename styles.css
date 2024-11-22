@@ -215,4 +215,7 @@ footer ul {
     p.about-me-content {
         text-align: center;
     }
+    nav ul {
+        width: 100%;
+    }
 }
