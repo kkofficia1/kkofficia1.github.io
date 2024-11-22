@@ -218,4 +218,10 @@ footer ul {
     nav ul {
         width: 100%;
     }
+    .mobile {
+        display: none;
+    }
+    nav ul {
+        justify-content: space-evenly;
+    }
 }
